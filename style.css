@@ -1,0 +1,165 @@
+/* body{
+  font-family: "Courier New";
+}
+
+.vertical-menu {
+    width: 200px;
+  }
+  
+  .vertical-menu a {
+   
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  } */
+  @font-face {
+    font-family: 'Raleway';
+    src: url('raleway.woff2') format('woff2'),
+         url('raleway.woff') format('woff');
+    /* Add more src entries for other font file formats if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Courier New", "Raleway", sans-serif;
+  }
+  
+  /* Style the header */
+  h1{
+    
+    padding: 20px;
+    text-align: left;
+    font-size: 35px;
+    color: black;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  
+  nav {
+    float: left;
+    width: 300px;
+    /*height: 300px; /* only for demonstration, should be removed */
+    background: white;
+    padding: 20px;
+    z-index:3;
+    text-align: center;
+    
+    letter-spacing: 0.2em;
+    color:black;
+
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 20px;
+    z-index:3;
+    text-align: center;
+    
+    letter-spacing: 0.2em;
+
+  }
+   nav ul li{
+    
+    padding-top:20px;
+
+  }
+
+  nav ul li a{
+    color:black;
+
+  }
+
+.compositions li{
+   
+     padding-top:10px;
+}
+
+.bio-text{
+    text-align: justify;
+     text-align-last: left;
+  
+}
+.publications{
+    text-align: justify;
+    text-align-last: left;
+    
+}
+.excibitions{
+    text-align: justify;
+    text-align-last: left;
+    
+}
+
+
+
+
+
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: white;
+   /*height: 300px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/*Digital art page*/
+.row {
+    /*float: left;*/
+    padding: 10px;
+    display:grid;
+     grid-template-areas:'item1 item2 item2 item2';
+    
+   
+}
+.column-left {
+    grid-area:item1;
+    width: 95%;
+     margin-right:2%
+    
+}
+
+.column-right {
+    grid-area:item2;
+    width: 100%;
+    text-align:justify;
+}
+
+
+
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+
+
+
+
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
