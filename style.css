@@ -219,17 +219,22 @@ a:hover {
 }
 
 
+/*intex fotos*/
+.image{
+  border-radius: 16px;
+}
+
 
 
   
   /* Style the footer */
   footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-
+  background-color: #AB87FF;/*#777;*/
+  padding: 16px;
+  text-align: center;
+  color: white;
+  margin-top: auto;
+}
 
 
 
